@@ -17,6 +17,7 @@ class TelegramController < ApplicationController
                     Adjektivdeklination.new,
                     AkkusativOrDativ.new,
                     Personalpronomen.new,
+                    Modalverben.new,
                     Possessivartikel.new,
                     Indefinitpronomen.new
                 ]
