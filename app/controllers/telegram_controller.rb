@@ -19,8 +19,9 @@ class TelegramController < ApplicationController
                     Personalpronomen.new,
                     Modalverben.new,
                     Possessivartikel.new,
-                    Indefinitpronomen.new
-                    VerbKickers.new
+                    Indefinitpronomen.new,
+                    VerbKickers.new,
+                    Konjunktiv2.new
                 ]
                 linkers = [
                     ReversoLinker.new,
