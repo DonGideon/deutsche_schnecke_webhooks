@@ -2,7 +2,7 @@ class Personalpronomen < GrammarRule
   def initialize
     super(
       "
-*NOM* - *AKK* - *DAT*
+*NOM* - *AKK אותך* - *DAT לך*
 ich - mich - mir
 du - dich - dir
 er - ihn - ihm
