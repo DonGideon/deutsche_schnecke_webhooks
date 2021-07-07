@@ -1,5 +1,9 @@
 class Modalverben < GrammarRule
+
     def initialize
+        @vergangenheit = 'Vergangenheit'
+        @gegenwart = 'Gegenwart'
+
         super(
             {
                 :vergangenheit => "

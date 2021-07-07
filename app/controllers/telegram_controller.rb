@@ -20,6 +20,7 @@ class TelegramController < ApplicationController
                     Modalverben.new,
                     Possessivartikel.new,
                     Indefinitpronomen.new,
+                    ReflexiveVerben.new,
                     VerbKickers.new,
                     Konjunktiv2.new
                 ]
