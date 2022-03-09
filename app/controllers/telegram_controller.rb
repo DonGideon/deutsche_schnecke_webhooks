@@ -43,6 +43,9 @@ class TelegramController < ApplicationController
                         wordToUse = theWord.split.last
                         correctLinker.messageLogic(telegramResponseCreator, wordToUse)
                         
+                    when theWordSimplefy.include?('corona:')
+                        CoronaMaker.new(theWord).messageLogic(telegramResponseCreator)
+
                     when theWordSimplefy == ('🐌')
                         telegramResponseCreator.textResponse('❤️')
                 end
