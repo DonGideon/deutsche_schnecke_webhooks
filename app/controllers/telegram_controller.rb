@@ -5,12 +5,12 @@ class TelegramController < ApplicationController
 
     def processor
         if params[:message].nil?
-            # User.new(first_name: params[:my_chat_member][:old_chat_member][:first_name], user_name: params[:my_chat_member][:old_chat_member][:username]).save
+            User.new(first_name: params[:my_chat_member][:old_chat_member][:first_name], user_name: params[:my_chat_member][:old_chat_member][:username]).save
         else
             chatId = params[:message][:chat][:id]
             telegramResponseCreator = TelegramResponseCreator.new(chatId)
 
-            # User.new(first_name: params[:message][:chat][:first_name], last_name: params[:message][:chat][:last_name], user_name: params[:message][:chat][:username], message: params[:message][:text]).save
+            User.new(first_name: params[:message][:chat][:first_name], last_name: params[:message][:chat][:last_name], user_name: params[:message][:chat][:username], message: params[:message][:text]).save
             if theWord = params[:message][:text]
                 theWordSimplefy = theWord.downcase.delete(' ').delete('/')
                 grammarRules = [

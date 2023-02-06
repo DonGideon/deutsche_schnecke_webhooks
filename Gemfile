@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 #locally you can use:
 # ruby '3.1.1'
 #remotly use:
-ruby '3.1.3'
+ruby '3.0.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
@@ -13,7 +13,7 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
-# gem 'pg', '1.2.3', group: :production
+gem 'pg', '1.2.3', group: :production
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
